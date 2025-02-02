@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENNÄÄN ULOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="startScreen">
+            <h1>MENNÄÄN ULOS</h1>
+            <button id="startButton" class="start-button">ALOITA</button>
+        </div>
+
+        <div id="gameScreen" class="hidden">
+            <h2 id="question"></h2>
+            <div id="gameArea">
+                <img id="speakerIcon" class="speaker-icon" src="kaiutin.png" alt="Kuuntele">
+                <div class="image-container">
+                    <img id="hyonteisImage" src="" alt="Liike">
+                </div>
+                <div class="button-container">
+                    <button id="trueButton" class="game-button true">OIKEIN</button>
+                    <button id="falseButton" class="game-button false">VÄÄRIN</button>
+                </div>
+                <div class="arrow-container">
+                    <img id="nextArrow" src="nuoli.png" alt="Seuraava" class="hidden">
+                </div>
+                <div id="stars"></div>
+            </div>
+        </div>
+
+        <div id="endScreen" class="hidden">
+            <h1>MENNÄÄN ULOS</h1>
+            <p id="finalFeedback">HIENOA!</p>
+            <p id="scoreText"></p>
+            <div id="finalStars"></div>
+            <button id="playAgainButton">PELAA UUDELLEEN</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
