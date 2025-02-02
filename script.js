@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadQuestionContent(question) {
         const { statementIndex } = question;
-        hyonteisImage.src = `${imageMap[statementIndex]}.PNG`;
+        hyonteisImage.src = `${imageMap[statementIndex]}.png`;
         hyonteisImage.style.display = 'block';
         this.question.textContent = statements[statementIndex];
         nextArrow.classList.add('hidden');
